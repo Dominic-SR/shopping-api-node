@@ -1,5 +1,5 @@
 /**
- * @author Dominic Sedu Raja
+ * @author Dominic P
  * @email dominicseduraja3@gmail.com
  * @create date 2021-01-11 
  * @modify date 2021-01-23 
@@ -23,9 +23,9 @@ require('dotenv').config();
      dateStrings: true
  })
  
- 
- 
  module.exports = database
+
+ //Database Configuration Mysql
  
  module.exports.transactions = {
      async beginTransaction() {

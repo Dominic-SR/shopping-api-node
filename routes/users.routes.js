@@ -5,7 +5,9 @@ const passport = require('passport');
 //router instance
 var router = express.Router();
 
-var UserController = require('../controller/user.controller')
+var UserController = require('../controller/users.controller')
 
 //-----------------------------Register-------------------------//
 router.post('/register',FileUpload.base64ToImage("profile_picture","profile_picture"),UserController.CreateUser);
+
+module.exports = router;
