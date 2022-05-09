@@ -5719,3 +5719,4002 @@
   label: undefined,
   timestamp: '2022-05-07T18:37:45.629Z'
 }
+{
+  error: Error: listen EADDRINUSE: address already in use :::6000
+      at Server.setupListenHandle [as _listen2] (node:net:1334:16)
+      at listenInCluster (node:net:1382:12)
+      at Server.listen (node:net:1469:7)
+      at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)
+      at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12) {
+    code: 'EADDRINUSE',
+    errno: -98,
+    syscall: 'listen',
+    address: '::',
+    port: 6000
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::6000\n' +
+    'Error: listen EADDRINUSE: address already in use :::6000\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::6000\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  exception: true,
+  date: 'Sun May 08 2022 23:34:05 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 11151,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 59396096,
+      heapTotal: 20066304,
+      heapUsed: 14534960,
+      external: 3059514,
+      arrayBuffers: 391420
+    }
+  },
+  os: { loadavg: [ 0.2, 0.07, 0.01 ], uptime: 42700.44 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1334,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1382,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 1469,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js',
+      function: 'Function.listen',
+      line: 618,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/app.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:34:05.888Z'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::6000
+      at Server.setupListenHandle [as _listen2] (node:net:1334:16)
+      at listenInCluster (node:net:1382:12)
+      at Server.listen (node:net:1469:7)
+      at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)
+      at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12) {
+    code: 'EADDRINUSE',
+    errno: -98,
+    syscall: 'listen',
+    address: '::',
+    port: 6000
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::6000\n' +
+    'Error: listen EADDRINUSE: address already in use :::6000\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::6000\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  exception: true,
+  date: 'Sun May 08 2022 23:34:18 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 11254,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 61771776,
+      heapTotal: 20328448,
+      heapUsed: 14633848,
+      external: 3059514,
+      arrayBuffers: 391420
+    }
+  },
+  os: { loadavg: [ 0.3, 0.1, 0.02 ], uptime: 42713.14 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1334,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1382,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 1469,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js',
+      function: 'Function.listen',
+      line: 618,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/app.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:34:18.589Z'
+}
+{
+  error: Error: write EIO
+      at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+      at writeGeneric (node:internal/stream_base_commons:155:3)
+      at WriteStream.Socket._writeGeneric (node:net:795:11)
+      at WriteStream.Socket._write (node:net:807:8)
+      at writeOrBuffer (node:internal/streams/writable:389:12)
+      at _write (node:internal/streams/writable:330:10)
+      at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+      at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)
+      at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)
+      at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139) {
+    errno: -5,
+    code: 'EIO',
+    syscall: 'write'
+  },
+  level: 'error',
+  message: 'uncaughtException: write EIO\n' +
+    'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  stack: 'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  exception: true,
+  date: 'Sun May 08 2022 23:34:18 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 11254,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 63221760,
+      heapTotal: 20328448,
+      heapUsed: 14765064,
+      external: 3064857,
+      arrayBuffers: 396723
+    }
+  },
+  os: { loadavg: [ 0.3, 0.1, 0.02 ], uptime: 42713.15 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/stream_base_commons',
+      function: 'afterWriteDispatched',
+      line: 164,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'node:internal/stream_base_commons',
+      function: 'writeGeneric',
+      line: 155,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:net',
+      function: 'WriteStream.Socket._writeGeneric',
+      line: 795,
+      method: '_writeGeneric',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'node:net',
+      function: 'WriteStream.Socket._write',
+      line: 807,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/writable',
+      function: 'writeOrBuffer',
+      line: 389,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: '_write',
+      line: 330,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: 'WriteStream.Writable.write',
+      line: 334,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 23,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js',
+      function: 'Console.log',
+      line: 79,
+      method: 'log',
+      native: false
+    },
+    {
+      column: 19,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js',
+      function: 'Console._write',
+      line: 82,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 139,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js',
+      function: 'doWrite',
+      line: 409,
+      method: null,
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:34:18.596Z'
+}
+{
+  error: Error: write EIO
+      at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+      at writeGeneric (node:internal/stream_base_commons:155:3)
+      at WriteStream.Socket._writeGeneric (node:net:795:11)
+      at WriteStream.Socket._write (node:net:807:8)
+      at writeOrBuffer (node:internal/streams/writable:389:12)
+      at _write (node:internal/streams/writable:330:10)
+      at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+      at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)
+      at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)
+      at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139) {
+    errno: -5,
+    code: 'EIO',
+    syscall: 'write'
+  },
+  level: 'error',
+  message: 'uncaughtException: write EIO\n' +
+    'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  stack: 'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  exception: true,
+  date: 'Sun May 08 2022 23:34:18 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 11254,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 63221760,
+      heapTotal: 20328448,
+      heapUsed: 14869760,
+      external: 3070354,
+      arrayBuffers: 402220
+    }
+  },
+  os: { loadavg: [ 0.3, 0.1, 0.02 ], uptime: 42713.15 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/stream_base_commons',
+      function: 'afterWriteDispatched',
+      line: 164,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'node:internal/stream_base_commons',
+      function: 'writeGeneric',
+      line: 155,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:net',
+      function: 'WriteStream.Socket._writeGeneric',
+      line: 795,
+      method: '_writeGeneric',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'node:net',
+      function: 'WriteStream.Socket._write',
+      line: 807,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/writable',
+      function: 'writeOrBuffer',
+      line: 389,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: '_write',
+      line: 330,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: 'WriteStream.Writable.write',
+      line: 334,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 23,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js',
+      function: 'Console.log',
+      line: 79,
+      method: 'log',
+      native: false
+    },
+    {
+      column: 19,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js',
+      function: 'Console._write',
+      line: 82,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 139,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js',
+      function: 'doWrite',
+      line: 409,
+      method: null,
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:34:18.598Z'
+}
+{
+  error: Error: write EIO
+      at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+      at writeGeneric (node:internal/stream_base_commons:155:3)
+      at WriteStream.Socket._writeGeneric (node:net:795:11)
+      at WriteStream.Socket._write (node:net:807:8)
+      at writeOrBuffer (node:internal/streams/writable:389:12)
+      at _write (node:internal/streams/writable:330:10)
+      at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+      at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)
+      at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)
+      at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139) {
+    errno: -5,
+    code: 'EIO',
+    syscall: 'write'
+  },
+  level: 'error',
+  message: 'uncaughtException: write EIO\n' +
+    'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  stack: 'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  exception: true,
+  date: 'Sun May 08 2022 23:34:18 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 11254,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 64548864,
+      heapTotal: 21639168,
+      heapUsed: 13225504,
+      external: 3075851,
+      arrayBuffers: 58163
+    }
+  },
+  os: { loadavg: [ 0.3, 0.1, 0.02 ], uptime: 42713.16 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/stream_base_commons',
+      function: 'afterWriteDispatched',
+      line: 164,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'node:internal/stream_base_commons',
+      function: 'writeGeneric',
+      line: 155,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:net',
+      function: 'WriteStream.Socket._writeGeneric',
+      line: 795,
+      method: '_writeGeneric',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'node:net',
+      function: 'WriteStream.Socket._write',
+      line: 807,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/writable',
+      function: 'writeOrBuffer',
+      line: 389,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: '_write',
+      line: 330,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: 'WriteStream.Writable.write',
+      line: 334,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 23,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js',
+      function: 'Console.log',
+      line: 79,
+      method: 'log',
+      native: false
+    },
+    {
+      column: 19,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js',
+      function: 'Console._write',
+      line: 82,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 139,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js',
+      function: 'doWrite',
+      line: 409,
+      method: null,
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:34:18.601Z'
+}
+{
+  error: Error: write EIO
+      at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+      at writeGeneric (node:internal/stream_base_commons:155:3)
+      at WriteStream.Socket._writeGeneric (node:net:795:11)
+      at WriteStream.Socket._write (node:net:807:8)
+      at writeOrBuffer (node:internal/streams/writable:389:12)
+      at _write (node:internal/streams/writable:330:10)
+      at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+      at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)
+      at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)
+      at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139) {
+    errno: -5,
+    code: 'EIO',
+    syscall: 'write'
+  },
+  level: 'error',
+  message: 'uncaughtException: write EIO\n' +
+    'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  stack: 'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  exception: true,
+  date: 'Sun May 08 2022 23:34:18 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 11254,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 64548864,
+      heapTotal: 21639168,
+      heapUsed: 13323904,
+      external: 3081347,
+      arrayBuffers: 63659
+    }
+  },
+  os: { loadavg: [ 0.3, 0.1, 0.02 ], uptime: 42713.16 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/stream_base_commons',
+      function: 'afterWriteDispatched',
+      line: 164,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'node:internal/stream_base_commons',
+      function: 'writeGeneric',
+      line: 155,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:net',
+      function: 'WriteStream.Socket._writeGeneric',
+      line: 795,
+      method: '_writeGeneric',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'node:net',
+      function: 'WriteStream.Socket._write',
+      line: 807,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/writable',
+      function: 'writeOrBuffer',
+      line: 389,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: '_write',
+      line: 330,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: 'WriteStream.Writable.write',
+      line: 334,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 23,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js',
+      function: 'Console.log',
+      line: 79,
+      method: 'log',
+      native: false
+    },
+    {
+      column: 19,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js',
+      function: 'Console._write',
+      line: 82,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 139,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js',
+      function: 'doWrite',
+      line: 409,
+      method: null,
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:34:18.602Z'
+}
+{
+  error: Error: write EIO
+      at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+      at writeGeneric (node:internal/stream_base_commons:155:3)
+      at WriteStream.Socket._writeGeneric (node:net:795:11)
+      at WriteStream.Socket._write (node:net:807:8)
+      at writeOrBuffer (node:internal/streams/writable:389:12)
+      at _write (node:internal/streams/writable:330:10)
+      at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+      at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)
+      at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)
+      at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139) {
+    errno: -5,
+    code: 'EIO',
+    syscall: 'write'
+  },
+  level: 'error',
+  message: 'uncaughtException: write EIO\n' +
+    'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  stack: 'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  exception: true,
+  date: 'Sun May 08 2022 23:34:18 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 11254,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 64548864,
+      heapTotal: 21639168,
+      heapUsed: 13421408,
+      external: 3086843,
+      arrayBuffers: 69155
+    }
+  },
+  os: { loadavg: [ 0.3, 0.1, 0.02 ], uptime: 42713.16 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/stream_base_commons',
+      function: 'afterWriteDispatched',
+      line: 164,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'node:internal/stream_base_commons',
+      function: 'writeGeneric',
+      line: 155,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:net',
+      function: 'WriteStream.Socket._writeGeneric',
+      line: 795,
+      method: '_writeGeneric',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'node:net',
+      function: 'WriteStream.Socket._write',
+      line: 807,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/writable',
+      function: 'writeOrBuffer',
+      line: 389,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: '_write',
+      line: 330,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: 'WriteStream.Writable.write',
+      line: 334,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 23,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js',
+      function: 'Console.log',
+      line: 79,
+      method: 'log',
+      native: false
+    },
+    {
+      column: 19,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js',
+      function: 'Console._write',
+      line: 82,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 139,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js',
+      function: 'doWrite',
+      line: 409,
+      method: null,
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:34:18.604Z'
+}
+{
+  error: Error: write EIO
+      at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+      at writeGeneric (node:internal/stream_base_commons:155:3)
+      at WriteStream.Socket._writeGeneric (node:net:795:11)
+      at WriteStream.Socket._write (node:net:807:8)
+      at writeOrBuffer (node:internal/streams/writable:389:12)
+      at _write (node:internal/streams/writable:330:10)
+      at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+      at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)
+      at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)
+      at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139) {
+    errno: -5,
+    code: 'EIO',
+    syscall: 'write'
+  },
+  level: 'error',
+  message: 'uncaughtException: write EIO\n' +
+    'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  stack: 'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  exception: true,
+  date: 'Sun May 08 2022 23:34:18 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 11254,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 64548864,
+      heapTotal: 21639168,
+      heapUsed: 13515960,
+      external: 3092339,
+      arrayBuffers: 74651
+    }
+  },
+  os: { loadavg: [ 0.3, 0.1, 0.02 ], uptime: 42713.16 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/stream_base_commons',
+      function: 'afterWriteDispatched',
+      line: 164,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'node:internal/stream_base_commons',
+      function: 'writeGeneric',
+      line: 155,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:net',
+      function: 'WriteStream.Socket._writeGeneric',
+      line: 795,
+      method: '_writeGeneric',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'node:net',
+      function: 'WriteStream.Socket._write',
+      line: 807,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/writable',
+      function: 'writeOrBuffer',
+      line: 389,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: '_write',
+      line: 330,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: 'WriteStream.Writable.write',
+      line: 334,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 23,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js',
+      function: 'Console.log',
+      line: 79,
+      method: 'log',
+      native: false
+    },
+    {
+      column: 19,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js',
+      function: 'Console._write',
+      line: 82,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 139,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js',
+      function: 'doWrite',
+      line: 409,
+      method: null,
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:34:18.606Z'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::6000
+      at Server.setupListenHandle [as _listen2] (node:net:1334:16)
+      at listenInCluster (node:net:1382:12)
+      at Server.listen (node:net:1469:7)
+      at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)
+      at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12) {
+    code: 'EADDRINUSE',
+    errno: -98,
+    syscall: 'listen',
+    address: '::',
+    port: 6000
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::6000\n' +
+    'Error: listen EADDRINUSE: address already in use :::6000\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::6000\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  exception: true,
+  date: 'Sun May 08 2022 23:34:37 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 11367,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 59314176,
+      heapTotal: 20328448,
+      heapUsed: 14417704,
+      external: 3059514,
+      arrayBuffers: 391420
+    }
+  },
+  os: { loadavg: [ 0.38, 0.13, 0.03 ], uptime: 42731.75 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1334,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1382,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 1469,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js',
+      function: 'Function.listen',
+      line: 618,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/app.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:34:37.197Z'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::6000
+      at Server.setupListenHandle [as _listen2] (node:net:1334:16)
+      at listenInCluster (node:net:1382:12)
+      at Server.listen (node:net:1469:7)
+      at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)
+      at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12) {
+    code: 'EADDRINUSE',
+    errno: -98,
+    syscall: 'listen',
+    address: '::',
+    port: 6000
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::6000\n' +
+    'Error: listen EADDRINUSE: address already in use :::6000\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::6000\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  exception: true,
+  date: 'Sun May 08 2022 23:38:18 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 11688,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 61571072,
+      heapTotal: 20328448,
+      heapUsed: 14361016,
+      external: 3059514,
+      arrayBuffers: 366089
+    }
+  },
+  os: { loadavg: [ 0.05, 0.1, 0.04 ], uptime: 42952.85 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1334,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1382,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 1469,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js',
+      function: 'Function.listen',
+      line: 618,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/app.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:38:18.294Z'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::6000
+      at Server.setupListenHandle [as _listen2] (node:net:1334:16)
+      at listenInCluster (node:net:1382:12)
+      at Server.listen (node:net:1469:7)
+      at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)
+      at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12) {
+    code: 'EADDRINUSE',
+    errno: -98,
+    syscall: 'listen',
+    address: '::',
+    port: 6000
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::6000\n' +
+    'Error: listen EADDRINUSE: address already in use :::6000\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::6000\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  exception: true,
+  date: 'Sun May 08 2022 23:38:29 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 11768,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 61407232,
+      heapTotal: 20328448,
+      heapUsed: 14470160,
+      external: 3059514,
+      arrayBuffers: 366089
+    }
+  },
+  os: { loadavg: [ 0.19, 0.13, 0.05 ], uptime: 42964.46 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1334,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1382,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 1469,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js',
+      function: 'Function.listen',
+      line: 618,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/app.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:38:29.906Z'
+}
+{
+  error: Error: write EIO
+      at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+      at writeGeneric (node:internal/stream_base_commons:155:3)
+      at WriteStream.Socket._writeGeneric (node:net:795:11)
+      at WriteStream.Socket._write (node:net:807:8)
+      at writeOrBuffer (node:internal/streams/writable:389:12)
+      at _write (node:internal/streams/writable:330:10)
+      at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+      at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)
+      at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)
+      at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139) {
+    errno: -5,
+    code: 'EIO',
+    syscall: 'write'
+  },
+  level: 'error',
+  message: 'uncaughtException: write EIO\n' +
+    'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  stack: 'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  exception: true,
+  date: 'Sun May 08 2022 23:38:29 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 11768,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 62533632,
+      heapTotal: 20328448,
+      heapUsed: 14830648,
+      external: 3064859,
+      arrayBuffers: 371394
+    }
+  },
+  os: { loadavg: [ 0.19, 0.13, 0.05 ], uptime: 42964.47 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/stream_base_commons',
+      function: 'afterWriteDispatched',
+      line: 164,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'node:internal/stream_base_commons',
+      function: 'writeGeneric',
+      line: 155,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:net',
+      function: 'WriteStream.Socket._writeGeneric',
+      line: 795,
+      method: '_writeGeneric',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'node:net',
+      function: 'WriteStream.Socket._write',
+      line: 807,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/writable',
+      function: 'writeOrBuffer',
+      line: 389,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: '_write',
+      line: 330,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: 'WriteStream.Writable.write',
+      line: 334,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 23,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js',
+      function: 'Console.log',
+      line: 79,
+      method: 'log',
+      native: false
+    },
+    {
+      column: 19,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js',
+      function: 'Console._write',
+      line: 82,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 139,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js',
+      function: 'doWrite',
+      line: 409,
+      method: null,
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:38:29.914Z'
+}
+{
+  error: Error: write EIO
+      at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+      at writeGeneric (node:internal/stream_base_commons:155:3)
+      at WriteStream.Socket._writeGeneric (node:net:795:11)
+      at WriteStream.Socket._write (node:net:807:8)
+      at writeOrBuffer (node:internal/streams/writable:389:12)
+      at _write (node:internal/streams/writable:330:10)
+      at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+      at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)
+      at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)
+      at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139) {
+    errno: -5,
+    code: 'EIO',
+    syscall: 'write'
+  },
+  level: 'error',
+  message: 'uncaughtException: write EIO\n' +
+    'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  stack: 'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  exception: true,
+  date: 'Sun May 08 2022 23:38:29 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 11768,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 62787584,
+      heapTotal: 20328448,
+      heapUsed: 14935320,
+      external: 3070358,
+      arrayBuffers: 376893
+    }
+  },
+  os: { loadavg: [ 0.19, 0.13, 0.05 ], uptime: 42964.47 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/stream_base_commons',
+      function: 'afterWriteDispatched',
+      line: 164,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'node:internal/stream_base_commons',
+      function: 'writeGeneric',
+      line: 155,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:net',
+      function: 'WriteStream.Socket._writeGeneric',
+      line: 795,
+      method: '_writeGeneric',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'node:net',
+      function: 'WriteStream.Socket._write',
+      line: 807,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/writable',
+      function: 'writeOrBuffer',
+      line: 389,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: '_write',
+      line: 330,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: 'WriteStream.Writable.write',
+      line: 334,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 23,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js',
+      function: 'Console.log',
+      line: 79,
+      method: 'log',
+      native: false
+    },
+    {
+      column: 19,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js',
+      function: 'Console._write',
+      line: 82,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 139,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js',
+      function: 'doWrite',
+      line: 409,
+      method: null,
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:38:29.915Z'
+}
+{
+  error: Error: write EIO
+      at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+      at writeGeneric (node:internal/stream_base_commons:155:3)
+      at WriteStream.Socket._writeGeneric (node:net:795:11)
+      at WriteStream.Socket._write (node:net:807:8)
+      at writeOrBuffer (node:internal/streams/writable:389:12)
+      at _write (node:internal/streams/writable:330:10)
+      at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+      at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)
+      at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)
+      at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139) {
+    errno: -5,
+    code: 'EIO',
+    syscall: 'write'
+  },
+  level: 'error',
+  message: 'uncaughtException: write EIO\n' +
+    'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  stack: 'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  exception: true,
+  date: 'Sun May 08 2022 23:38:29 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 11768,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 64126976,
+      heapTotal: 21901312,
+      heapUsed: 13395056,
+      external: 831517,
+      arrayBuffers: 58169
+    }
+  },
+  os: { loadavg: [ 0.19, 0.13, 0.05 ], uptime: 42964.47 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/stream_base_commons',
+      function: 'afterWriteDispatched',
+      line: 164,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'node:internal/stream_base_commons',
+      function: 'writeGeneric',
+      line: 155,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:net',
+      function: 'WriteStream.Socket._writeGeneric',
+      line: 795,
+      method: '_writeGeneric',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'node:net',
+      function: 'WriteStream.Socket._write',
+      line: 807,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/writable',
+      function: 'writeOrBuffer',
+      line: 389,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: '_write',
+      line: 330,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: 'WriteStream.Writable.write',
+      line: 334,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 23,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js',
+      function: 'Console.log',
+      line: 79,
+      method: 'log',
+      native: false
+    },
+    {
+      column: 19,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js',
+      function: 'Console._write',
+      line: 82,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 139,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js',
+      function: 'doWrite',
+      line: 409,
+      method: null,
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:38:29.918Z'
+}
+{
+  error: Error: write EIO
+      at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+      at writeGeneric (node:internal/stream_base_commons:155:3)
+      at WriteStream.Socket._writeGeneric (node:net:795:11)
+      at WriteStream.Socket._write (node:net:807:8)
+      at writeOrBuffer (node:internal/streams/writable:389:12)
+      at _write (node:internal/streams/writable:330:10)
+      at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+      at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)
+      at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)
+      at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139) {
+    errno: -5,
+    code: 'EIO',
+    syscall: 'write'
+  },
+  level: 'error',
+  message: 'uncaughtException: write EIO\n' +
+    'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  stack: 'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  exception: true,
+  date: 'Sun May 08 2022 23:38:29 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 11768,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 64126976,
+      heapTotal: 21901312,
+      heapUsed: 13496592,
+      external: 837014,
+      arrayBuffers: 63666
+    }
+  },
+  os: { loadavg: [ 0.19, 0.13, 0.05 ], uptime: 42964.47 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/stream_base_commons',
+      function: 'afterWriteDispatched',
+      line: 164,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'node:internal/stream_base_commons',
+      function: 'writeGeneric',
+      line: 155,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:net',
+      function: 'WriteStream.Socket._writeGeneric',
+      line: 795,
+      method: '_writeGeneric',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'node:net',
+      function: 'WriteStream.Socket._write',
+      line: 807,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/writable',
+      function: 'writeOrBuffer',
+      line: 389,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: '_write',
+      line: 330,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: 'WriteStream.Writable.write',
+      line: 334,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 23,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js',
+      function: 'Console.log',
+      line: 79,
+      method: 'log',
+      native: false
+    },
+    {
+      column: 19,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js',
+      function: 'Console._write',
+      line: 82,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 139,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js',
+      function: 'doWrite',
+      line: 409,
+      method: null,
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:38:29.919Z'
+}
+{
+  error: Error: write EIO
+      at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+      at writeGeneric (node:internal/stream_base_commons:155:3)
+      at WriteStream.Socket._writeGeneric (node:net:795:11)
+      at WriteStream.Socket._write (node:net:807:8)
+      at writeOrBuffer (node:internal/streams/writable:389:12)
+      at _write (node:internal/streams/writable:330:10)
+      at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+      at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)
+      at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)
+      at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139) {
+    errno: -5,
+    code: 'EIO',
+    syscall: 'write'
+  },
+  level: 'error',
+  message: 'uncaughtException: write EIO\n' +
+    'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  stack: 'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  exception: true,
+  date: 'Sun May 08 2022 23:38:29 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 11768,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 64126976,
+      heapTotal: 21901312,
+      heapUsed: 13591016,
+      external: 842511,
+      arrayBuffers: 69163
+    }
+  },
+  os: { loadavg: [ 0.19, 0.13, 0.05 ], uptime: 42964.48 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/stream_base_commons',
+      function: 'afterWriteDispatched',
+      line: 164,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'node:internal/stream_base_commons',
+      function: 'writeGeneric',
+      line: 155,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:net',
+      function: 'WriteStream.Socket._writeGeneric',
+      line: 795,
+      method: '_writeGeneric',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'node:net',
+      function: 'WriteStream.Socket._write',
+      line: 807,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/writable',
+      function: 'writeOrBuffer',
+      line: 389,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: '_write',
+      line: 330,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: 'WriteStream.Writable.write',
+      line: 334,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 23,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js',
+      function: 'Console.log',
+      line: 79,
+      method: 'log',
+      native: false
+    },
+    {
+      column: 19,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js',
+      function: 'Console._write',
+      line: 82,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 139,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js',
+      function: 'doWrite',
+      line: 409,
+      method: null,
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:38:29.921Z'
+}
+{
+  error: Error: write EIO
+      at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+      at writeGeneric (node:internal/stream_base_commons:155:3)
+      at WriteStream.Socket._writeGeneric (node:net:795:11)
+      at WriteStream.Socket._write (node:net:807:8)
+      at writeOrBuffer (node:internal/streams/writable:389:12)
+      at _write (node:internal/streams/writable:330:10)
+      at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+      at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)
+      at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)
+      at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139) {
+    errno: -5,
+    code: 'EIO',
+    syscall: 'write'
+  },
+  level: 'error',
+  message: 'uncaughtException: write EIO\n' +
+    'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  stack: 'Error: write EIO\n' +
+    '    at afterWriteDispatched (node:internal/stream_base_commons:164:15)\n' +
+    '    at writeGeneric (node:internal/stream_base_commons:155:3)\n' +
+    '    at WriteStream.Socket._writeGeneric (node:net:795:11)\n' +
+    '    at WriteStream.Socket._write (node:net:807:8)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at Console.log (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js:79:23)\n' +
+    '    at Console._write (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js:82:19)\n' +
+    '    at doWrite (/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:409:139)',
+  exception: true,
+  date: 'Sun May 08 2022 23:38:29 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 11768,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 64397312,
+      heapTotal: 21901312,
+      heapUsed: 13685568,
+      external: 848008,
+      arrayBuffers: 74660
+    }
+  },
+  os: { loadavg: [ 0.19, 0.13, 0.05 ], uptime: 42964.48 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/stream_base_commons',
+      function: 'afterWriteDispatched',
+      line: 164,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'node:internal/stream_base_commons',
+      function: 'writeGeneric',
+      line: 155,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:net',
+      function: 'WriteStream.Socket._writeGeneric',
+      line: 795,
+      method: '_writeGeneric',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'node:net',
+      function: 'WriteStream.Socket._write',
+      line: 807,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/writable',
+      function: 'writeOrBuffer',
+      line: 389,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: '_write',
+      line: 330,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: 'WriteStream.Writable.write',
+      line: 334,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 23,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston/lib/winston/transports/console.js',
+      function: 'Console.log',
+      line: 79,
+      method: 'log',
+      native: false
+    },
+    {
+      column: 19,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/index.js',
+      function: 'Console._write',
+      line: 82,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 139,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js',
+      function: 'doWrite',
+      line: 409,
+      method: null,
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:38:29.922Z'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::3333
+      at Server.setupListenHandle [as _listen2] (node:net:1334:16)
+      at listenInCluster (node:net:1382:12)
+      at Server.listen (node:net:1469:7)
+      at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)
+      at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12) {
+    code: 'EADDRINUSE',
+    errno: -98,
+    syscall: 'listen',
+    address: '::',
+    port: 3333
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::3333\n' +
+    'Error: listen EADDRINUSE: address already in use :::3333\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::3333\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  exception: true,
+  date: 'Sun May 08 2022 23:44:18 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 12289,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 61497344,
+      heapTotal: 19804160,
+      heapUsed: 14557792,
+      external: 3059514,
+      arrayBuffers: 391420
+    }
+  },
+  os: { loadavg: [ 0.41, 0.23, 0.11 ], uptime: 43313.01 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1334,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1382,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 1469,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js',
+      function: 'Function.listen',
+      line: 618,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/app.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:44:18.460Z'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::4321
+      at Server.setupListenHandle [as _listen2] (node:net:1334:16)
+      at listenInCluster (node:net:1382:12)
+      at Server.listen (node:net:1469:7)
+      at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)
+      at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12) {
+    code: 'EADDRINUSE',
+    errno: -98,
+    syscall: 'listen',
+    address: '::',
+    port: 4321
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::4321\n' +
+    'Error: listen EADDRINUSE: address already in use :::4321\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::4321\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  exception: true,
+  date: 'Sun May 08 2022 23:44:40 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 12379,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 61325312,
+      heapTotal: 20328448,
+      heapUsed: 14479896,
+      external: 3059514,
+      arrayBuffers: 391420
+    }
+  },
+  os: { loadavg: [ 0.51, 0.27, 0.13 ], uptime: 43334.61 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1334,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1382,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 1469,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js',
+      function: 'Function.listen',
+      line: 618,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/app.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:44:40.057Z'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::4321
+      at Server.setupListenHandle [as _listen2] (node:net:1334:16)
+      at listenInCluster (node:net:1382:12)
+      at Server.listen (node:net:1469:7)
+      at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)
+      at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12) {
+    code: 'EADDRINUSE',
+    errno: -98,
+    syscall: 'listen',
+    address: '::',
+    port: 4321
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::4321\n' +
+    'Error: listen EADDRINUSE: address already in use :::4321\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::4321\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  exception: true,
+  date: 'Sun May 08 2022 23:47:50 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 12658,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 66437120,
+      heapTotal: 31862784,
+      heapUsed: 15543528,
+      external: 1140200,
+      arrayBuffers: 121098
+    }
+  },
+  os: { loadavg: [ 0.64, 0.4, 0.2 ], uptime: 43524.95 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1334,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1382,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 1469,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js',
+      function: 'Function.listen',
+      line: 618,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/app.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:47:50.392Z'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::4321
+      at Server.setupListenHandle [as _listen2] (node:net:1334:16)
+      at listenInCluster (node:net:1382:12)
+      at Server.listen (node:net:1469:7)
+      at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)
+      at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12) {
+    code: 'EADDRINUSE',
+    errno: -98,
+    syscall: 'listen',
+    address: '::',
+    port: 4321
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::4321\n' +
+    'Error: listen EADDRINUSE: address already in use :::4321\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::4321\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  exception: true,
+  date: 'Sun May 08 2022 23:49:57 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 13025,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 66834432,
+      heapTotal: 32124928,
+      heapUsed: 15709664,
+      external: 1140200,
+      arrayBuffers: 121098
+    }
+  },
+  os: { loadavg: [ 0.3, 0.38, 0.22 ], uptime: 43652.15 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1334,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1382,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 1469,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js',
+      function: 'Function.listen',
+      line: 618,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/app.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:49:57.592Z'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::4321
+      at Server.setupListenHandle [as _listen2] (node:net:1334:16)
+      at listenInCluster (node:net:1382:12)
+      at Server.listen (node:net:1469:7)
+      at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)
+      at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12) {
+    code: 'EADDRINUSE',
+    errno: -98,
+    syscall: 'listen',
+    address: '::',
+    port: 4321
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::4321\n' +
+    'Error: listen EADDRINUSE: address already in use :::4321\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::4321\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  exception: true,
+  date: 'Sun May 08 2022 23:50:48 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 13174,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 66928640,
+      heapTotal: 31600640,
+      heapUsed: 15646192,
+      external: 1140200,
+      arrayBuffers: 121098
+    }
+  },
+  os: { loadavg: [ 0.47, 0.42, 0.24 ], uptime: 43703.51 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1334,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1382,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 1469,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js',
+      function: 'Function.listen',
+      line: 618,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/app.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:50:48.957Z'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::4321
+      at Server.setupListenHandle [as _listen2] (node:net:1334:16)
+      at listenInCluster (node:net:1382:12)
+      at Server.listen (node:net:1469:7)
+      at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)
+      at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12) {
+    code: 'EADDRINUSE',
+    errno: -98,
+    syscall: 'listen',
+    address: '::',
+    port: 4321
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::4321\n' +
+    'Error: listen EADDRINUSE: address already in use :::4321\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::4321\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  exception: true,
+  date: 'Sun May 08 2022 23:51:50 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 13268,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 65929216,
+      heapTotal: 31600640,
+      heapUsed: 15719000,
+      external: 3547883,
+      arrayBuffers: 121098
+    }
+  },
+  os: { loadavg: [ 0.62, 0.44, 0.26 ], uptime: 43764.66 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1334,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1382,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 1469,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js',
+      function: 'Function.listen',
+      line: 618,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/app.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:51:50.110Z'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::4321
+      at Server.setupListenHandle [as _listen2] (node:net:1334:16)
+      at listenInCluster (node:net:1382:12)
+      at Server.listen (node:net:1469:7)
+      at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)
+      at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12) {
+    code: 'EADDRINUSE',
+    errno: -98,
+    syscall: 'listen',
+    address: '::',
+    port: 4321
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::4321\n' +
+    'Error: listen EADDRINUSE: address already in use :::4321\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::4321\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  exception: true,
+  date: 'Sun May 08 2022 23:53:00 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 13411,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 66965504,
+      heapTotal: 31862784,
+      heapUsed: 15675696,
+      external: 1140200,
+      arrayBuffers: 121098
+    }
+  },
+  os: { loadavg: [ 0.44, 0.43, 0.27 ], uptime: 43835.55 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1334,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1382,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 1469,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js',
+      function: 'Function.listen',
+      line: 618,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/app.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:53:00.992Z'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::4321
+      at Server.setupListenHandle [as _listen2] (node:net:1334:16)
+      at listenInCluster (node:net:1382:12)
+      at Server.listen (node:net:1469:7)
+      at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)
+      at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12) {
+    code: 'EADDRINUSE',
+    errno: -98,
+    syscall: 'listen',
+    address: '::',
+    port: 4321
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::4321\n' +
+    'Error: listen EADDRINUSE: address already in use :::4321\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::4321\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  exception: true,
+  date: 'Sun May 08 2022 23:53:14 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 13498,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 66748416,
+      heapTotal: 31862784,
+      heapUsed: 15733488,
+      external: 1140200,
+      arrayBuffers: 132112
+    }
+  },
+  os: { loadavg: [ 0.58, 0.46, 0.28 ], uptime: 43848.56 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1334,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1382,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 1469,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js',
+      function: 'Function.listen',
+      line: 618,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/app.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:53:14.010Z'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::4321
+      at Server.setupListenHandle [as _listen2] (node:net:1334:16)
+      at listenInCluster (node:net:1382:12)
+      at Server.listen (node:net:1469:7)
+      at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)
+      at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12) {
+    code: 'EADDRINUSE',
+    errno: -98,
+    syscall: 'listen',
+    address: '::',
+    port: 4321
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::4321\n' +
+    'Error: listen EADDRINUSE: address already in use :::4321\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::4321\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  exception: true,
+  date: 'Sun May 08 2022 23:56:43 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 13900,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 65335296,
+      heapTotal: 32124928,
+      heapUsed: 15724608,
+      external: 1140200,
+      arrayBuffers: 132112
+    }
+  },
+  os: { loadavg: [ 0.85, 0.51, 0.32 ], uptime: 44058.45 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1334,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1382,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 1469,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js',
+      function: 'Function.listen',
+      line: 618,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/app.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:56:43.895Z'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::4321
+      at Server.setupListenHandle [as _listen2] (node:net:1334:16)
+      at listenInCluster (node:net:1382:12)
+      at Server.listen (node:net:1469:7)
+      at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)
+      at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12) {
+    code: 'EADDRINUSE',
+    errno: -98,
+    syscall: 'listen',
+    address: '::',
+    port: 4321
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::4321\n' +
+    'Error: listen EADDRINUSE: address already in use :::4321\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::4321\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1334:16)\n' +
+    '    at listenInCluster (node:net:1382:12)\n' +
+    '    at Server.listen (node:net:1469:7)\n' +
+    '    at Function.listen (/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js:618:24)\n' +
+    '    at Object.<anonymous> (/home/dominic/Project/nodejs/shopping-api-node/app.js:18:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  exception: true,
+  date: 'Sun May 08 2022 23:57:08 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 14095,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 64458752,
+      heapTotal: 32649216,
+      heapUsed: 15781208,
+      external: 1140200,
+      arrayBuffers: 132112
+    }
+  },
+  os: { loadavg: [ 0.76, 0.51, 0.33 ], uptime: 44082.75 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1334,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1382,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 1469,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/node_modules/express/lib/application.js',
+      function: 'Function.listen',
+      line: 618,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/dominic/Project/nodejs/shopping-api-node/app.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    }
+  ],
+  label: undefined,
+  timestamp: '2022-05-08T23:57:08.197Z'
+}

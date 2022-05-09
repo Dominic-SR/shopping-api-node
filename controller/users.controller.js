@@ -5,16 +5,34 @@ const { Message } = require("../utils/messages")
 const Response = require("../utils/response")
 const bcrypt = require("bcryptjs")
 const jwt = require('jsonwebtoken')
+const userModel = require('../models/users.model')
 
 const userController = {
 async CreateUser(req,res){
     try{
         let {
-            user_name,user_email,user_mobile_no,user_address,profile_picture
+            user_name,role_id,user_email,user_password,user_mobile_no,user_address,profile_picture
         } = req.body;
 
         if(user_email){
-            let [user] = await userModal.CreateUser
+            let [user] = await userModel.CreateUser(req.body);
+            if(user){
+                new Response(
+                    res,
+                    StatusCodes.OK
+                )._SuccessResponse(
+                    Message.UserRegister.SuccessMessage.Create
+                )
+            }
+            else{
+                new Response(
+                    res,
+                    StatusCodes.BAD_REQUEST
+                )._ErrorMessage(
+                    Message.UserRegister.FailureMessage.Create
+                )
+            }
+
         }
     }
     catch(err){

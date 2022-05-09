@@ -13,6 +13,8 @@ app.use(cors());
 app.use(cookieParser());
 const { ExtractJwt, Strategy } = require('passport-jwt');
 
-app.listen(5000,()=>{
-    console.log("Port Run Localhost:6000");
+app.use('/ecom',indexRouter)
+
+app.listen(4321,()=>{
+    console.log("Port Run Localhost:4321");
 })

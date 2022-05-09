@@ -8,6 +8,17 @@ module.exports = {
      * Example:
      * await queryInterface.createTable('users', { id: Sequelize.INTEGER });
      */
+    await queryInterface.createTable('roles',{
+      role_id:{
+        allownull: false,
+        autoIncrement: true,
+        primaryKey: true,
+        type: Sequelize.INTEGER
+      },
+      role_type:{
+        type:Sequelize.STRING
+      }
+  })
   },
 
   async down (queryInterface, Sequelize) {

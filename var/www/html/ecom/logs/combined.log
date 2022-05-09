@@ -1,0 +1,110 @@
+{
+  level: 'info',
+  label: undefined,
+  timestamp: '2022-05-08T23:45:02.246Z'
+}
+{
+  message: 'userModal is not defined',
+  level: 'info',
+  label: undefined,
+  timestamp: '2022-05-08T23:45:02.251Z'
+}
+{
+  level: 'info',
+  label: undefined,
+  timestamp: '2022-05-08T23:48:46.214Z'
+}
+{
+  message: '(intermediate value) is not iterable',
+  level: 'info',
+  label: undefined,
+  timestamp: '2022-05-08T23:48:46.219Z'
+}
+{
+  message: "PREPARING INSERT INTO users (user_name,user_email,user_mobile_no,user_address) VALUES ('dominic','dom@gmail.com','9876543210','st.marys colony')",
+  level: 'info',
+  label: undefined,
+  timestamp: '2022-05-08T23:51:54.362Z'
+}
+{
+  message: "PREPARING INSERT INTO users (user_name,user_email,user_mobile_no,user_address) VALUES ('dominic','dom@gmail.com','9876543210','st.marys colony')",
+  level: 'info',
+  label: undefined,
+  timestamp: '2022-05-08T23:51:54.367Z'
+}
+{
+  message: "PREPARING INSERT INTO users (user_name,user_role,user_email,user_mobile_no,user_address) VALUES ('dominic','1','dom@gmail.com','9876543210','st.marys colony')",
+  level: 'info',
+  label: undefined,
+  timestamp: '2022-05-08T23:57:26.736Z'
+}
+{
+  message: "PREPARING INSERT INTO users (user_name,user_role,user_email,user_mobile_no,user_address) VALUES ('dominic','1','dom@gmail.com','9876543210','st.marys colony')",
+  level: 'info',
+  label: undefined,
+  timestamp: '2022-05-08T23:57:50.727Z'
+}
+{
+  message: "PREPARING INSERT INTO users (user_name,user_role,user_email,user_mobile_no,user_address) VALUES ('dominic','1','dom@gmail.com','9876543210','st.marys colony')",
+  level: 'info',
+  label: undefined,
+  timestamp: '2022-05-08T23:57:50.730Z'
+}
+{
+  message: "Unknown column 'user_role' in 'field list'",
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: "INSERT INTO users (user_name,user_role,user_email,user_mobile_no,user_address) VALUES ('dominic','1','dom@gmail.com','9876543210','st.marys colony')",
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'user_role' in 'field list'",
+  level: 'info',
+  label: undefined,
+  timestamp: '2022-05-08T23:57:50.750Z'
+}
+{
+  message: "Unknown column 'user_role' in 'field list'",
+  level: 'info',
+  label: undefined,
+  timestamp: '2022-05-08T23:57:50.752Z'
+}
+{
+  message: "PREPARING INSERT INTO users (user_name,user_role,user_email,user_mobile_no,user_address) VALUES ('dominic','1','dom@gmail.com','9876543210','st.marys colony')",
+  level: 'info',
+  label: undefined,
+  timestamp: '2022-05-08T23:59:51.415Z'
+}
+{
+  message: "PREPARING INSERT INTO users (user_name,user_role,user_email,user_mobile_no,user_address) VALUES ('dominic','1','dom@gmail.com','9876543210','st.marys colony')",
+  level: 'info',
+  label: undefined,
+  timestamp: '2022-05-08T23:59:51.419Z'
+}
+{
+  message: "Unknown column 'user_role' in 'field list'",
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: "INSERT INTO users (user_name,user_role,user_email,user_mobile_no,user_address) VALUES ('dominic','1','dom@gmail.com','9876543210','st.marys colony')",
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'user_role' in 'field list'",
+  level: 'info',
+  label: undefined,
+  timestamp: '2022-05-08T23:59:51.438Z'
+}
+{
+  message: "Unknown column 'user_role' in 'field list'",
+  level: 'info',
+  label: undefined,
+  timestamp: '2022-05-08T23:59:51.440Z'
+}
+{
+  message: "PREPARING INSERT INTO users (user_name,role_id,user_email,user_mobile_no,user_address) VALUES ('dominic','1','dom@gmail.com','9876543210','st.marys colony')",
+  level: 'info',
+  label: undefined,
+  timestamp: '2022-05-09T00:00:28.248Z'
+}
+{
+  message: "PREPARING INSERT INTO users (user_name,role_id,user_email,user_mobile_no,user_address) VALUES ('dominic','1','dom@gmail.com','9876543210','st.marys colony')",
+  level: 'info',
+  label: undefined,
+  timestamp: '2022-05-09T00:00:28.250Z'
+}
