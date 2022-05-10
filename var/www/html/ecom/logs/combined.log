@@ -108,3 +108,30 @@
   label: undefined,
   timestamp: '2022-05-09T00:00:28.250Z'
 }
+{
+  message: 'mime.getExtension is not a function',
+  level: 'info',
+  label: undefined,
+  timestamp: '2022-05-09T00:14:00.965Z'
+}
+{
+  message: "PREPARING INSERT INTO users (user_name,role_id,user_email,user_mobile_no,user_address,profile_picture) VALUES ('dominic','1','dom@gmail.com','9876543210','st.marys colony','image/1652055453825_profile_picture.jpeg')",
+  level: 'info',
+  label: undefined,
+  timestamp: '2022-05-09T00:17:33.827Z'
+}
+{
+  message: "PREPARING INSERT INTO users (user_name,role_id,user_email,user_mobile_no,user_address,profile_picture) VALUES ('dominic','1','dom@gmail.com','9876543210','st.marys colony','image/1652055453825_profile_picture.jpeg')",
+  level: 'info',
+  label: undefined,
+  timestamp: '2022-05-09T00:17:33.830Z'
+}
+{
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'mkdir',
+  path: 'var/www/html/ecom/public/uploads/image',
+  level: 'info',
+  label: undefined,
+  timestamp: '2022-05-09T00:17:33.837Z'
+}

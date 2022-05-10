@@ -38,7 +38,27 @@ async CreateUser(req,res){
     catch(err){
         new SpErrorHandler(res,err)
     }
+},
+async LoginUser(req,res){
+    try{
+        let {
+            user_email,user_password
+        } = req.body;
+
+        let [login] = await userModel.LoginUser(req.body)
+        if(login.length){
+
+        }
+        else{
+            
+        }
+
+    }
+    catch(err){
+        new SpErrorHandler(res,err)
+    }
 }
+
 }
 
 module.exports = userController

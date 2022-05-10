@@ -9718,3 +9718,40 @@
   label: undefined,
   timestamp: '2022-05-08T23:57:08.197Z'
 }
+{
+  error: [Error: ENOENT: no such file or directory, open 'var/www/html/ecom/public/uploads/image/1652055453825_profile_picture.jpeg'] {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: 'var/www/html/ecom/public/uploads/image/1652055453825_profile_picture.jpeg'
+  },
+  level: 'error',
+  message: "uncaughtException: ENOENT: no such file or directory, open 'var/www/html/ecom/public/uploads/image/1652055453825_profile_picture.jpeg'\n" +
+    "Error: ENOENT: no such file or directory, open 'var/www/html/ecom/public/uploads/image/1652055453825_profile_picture.jpeg'",
+  stack: "Error: ENOENT: no such file or directory, open 'var/www/html/ecom/public/uploads/image/1652055453825_profile_picture.jpeg'",
+  exception: true,
+  date: 'Mon May 09 2022 00:17:33 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 18561,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/dominic/Project/nodejs/shopping-api-node',
+    execPath: '/usr/bin/node',
+    version: 'v16.13.2',
+    argv: [
+      '/usr/bin/node',
+      '/home/dominic/Project/nodejs/shopping-api-node/app.js'
+    ],
+    memoryUsage: {
+      rss: 67911680,
+      heapTotal: 32649216,
+      heapUsed: 15270848,
+      external: 3815684,
+      arrayBuffers: 302053
+    }
+  },
+  os: { loadavg: [ 1.39, 0.65, 0.51 ], uptime: 45308.39 },
+  trace: [],
+  label: undefined,
+  timestamp: '2022-05-09T00:17:33.841Z'
+}
