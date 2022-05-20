@@ -41,16 +41,28 @@ async CreateUser(req,res){
 },
 async LoginUser(req,res){
     try{
+        
         let {
             user_email,user_password
         } = req.body;
-
+        console.log("-------------------->",req.body)
         let [login] = await userModel.LoginUser(req.body)
+        console.log("-------------------->",login)
         if(login.length){
-
+            new Response(
+                res,
+                StatusCodes.OK
+            )._SuccessResponse(
+                Message.LoginUser.SuccessMessage.LoginUser
+            )
         }
         else{
-            
+            new Response(
+                res,
+                StatusCodes.BAD_REQUEST
+            )._ErrorMessage(
+                Message.UserLogin.FailureMessage.LoginUser
+            )
         }
 
     }
